@@ -1,0 +1,19 @@
+collections:
+  case-studies:
+    output: true
+
+defaults:
+  - scope:
+      path: ""
+      type: "case-studies"
+    values:
+      layout: "case-study"
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
