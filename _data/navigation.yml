@@ -1,2 +1,8 @@
-- name: Home
-  link: /
+- name: Work
+  link: /#work
+- name: About
+  link: /#about
+- name: Services
+  link: /#services
+- name: Contact
+  link: /#contact

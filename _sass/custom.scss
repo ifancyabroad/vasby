@@ -1,3 +1,28 @@
 // Bootstrap variable overrides
-$body-bg: #000;
-$body-color: #111;
+$primary: #2e4849;
+$secondary: #fbe4e4;
+$success: #28a745;
+$info: #17a2b8;
+$warning: #ff7200;
+$danger: #dc3545;
+$light: #dcddde;
+$dark: #231f20;
+
+$theme-colors: (
+  "primary": $primary,
+  "secondary": $secondary,
+  "success": $success,
+  "info": $info,
+  "warning": $warning,
+  "danger": $danger,
+  "light": $light,
+  "dark": $dark
+);
+
+$font-family-sans-serif: "Larsseit", sans-serif;
+$font-family-base: $font-family-sans-serif;
+
+$body-bg: #e4e4e3;
+$body-color: #3f404b;
+
+$navbar-dark-color: $secondary;
