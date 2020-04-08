@@ -1,13 +1,13 @@
 collections:
-  case-studies:
+  case_studies:
     output: true
 
 defaults:
   - scope:
       path: ""
-      type: "case-studies"
+      type: "case_studies"
     values:
-      layout: "case-study"
+      layout: "case_study"
   - scope:
       path: ""
     values:

@@ -3221,4 +3221,6 @@ a.text-dark:hover, a.text-dark:focus { color: black !important; }
 
 .header-text { max-width: 857px; }
 
+.case-studies .case-study { width: 48%; }
+
 /*# sourceMappingURL=styles.css.map */
