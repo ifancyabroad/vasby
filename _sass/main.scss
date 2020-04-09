@@ -17,6 +17,10 @@
 
   .case-study {
     width: 48%;
+
+    &.even {
+      margin-top: 3rem;
+    }
   }
 }
 
