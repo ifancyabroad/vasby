@@ -1,0 +1,41 @@
+<footer class="bg-primary text-secondary">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <div class="footer-title text-center mx-auto">
+          <h1 class="mb-5">Let's create something great together.</h1>
+          <a class="text-secondary spaced-letters h6" href="#">LET'S TALK</a>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-4">
+        <img src="/assets/logos/vasby_logo_pink.svg" width="120" alt="Vasby">
+      </div>
+      <div class="col-lg-4">
+        <h6>Contact Us</h6>
+        <a class="text-secondary" href="mailto:studio@thevasby.co.uk">studio@thevasby.co.uk</a>
+      </div>
+      <div class="col-lg-4">
+        <div class="row">
+          <div class="col-6">
+            <nav class="nav flex-column">
+              {% for item in site.data.navigation %}
+                <a class="text-secondary nav-link {% if page.url == item.link %}active{% endif %}" href="{{ item.link }}">
+                  {{ item.name }} {% if page.url == item.link %}<span class="sr-only">(current)</span>{% endif %}
+                </a>
+              {% endfor %}
+            </nav>
+          </div>
+          <div class="col-6">
+            <nav class="nav flex-column">
+              {% for item in site.data.social_media %}
+                <a class="text-secondary nav-link" href="{{ item.link }}">{{ item.name }}</a>
+              {% endfor %}
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>

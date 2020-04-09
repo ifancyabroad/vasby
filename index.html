@@ -3,9 +3,7 @@ layout: default
 title: Home
 ---
 <div class="bg-primary text-secondary header-section">
-  <div class="container">
-    {% include navigation.html %}
-  </div>
+  {% include navigation.html %}
 
   <div class="container">
     <div class="row">
@@ -48,7 +46,7 @@ title: Home
     </div>
     <div class="row">
       {% for approach in site.data.approaches %}
-      <div class="col-4">
+      <div class="col-lg-4">
         <h4 class="mb-4">{{ approach.name }}</h4>
         <p class="mb-4">{{ approach.text }}</p>
         <ul class="mb-4">
@@ -68,7 +66,10 @@ title: Home
   <div class="container">
     <div class="row">
       <div class="col-lg-6">
-        <img class="img-fluid" src="/assets/images/about_vasby.jpg" alt="Man working at computer">
+        <div class="d-flex justify-content-center">
+          <h6 class="text-primary spaced-letters vertical-text m-0 mr-3">JAMES & EDGAR - FOUNDERS OF THE VASBY</h6>
+          <img class="img-fluid" src="/assets/images/about_vasby.jpg" alt="Man working at computer">
+        </div>
       </div>
       <div class="col-lg-6">
         <h6 class="text-primary spaced-letters mb-3">ABOUT</h6>
@@ -81,3 +82,5 @@ title: Home
     </div>
   </div>
 </div>
+
+{% include footer.html %}
