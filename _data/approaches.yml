@@ -1,0 +1,27 @@
+- name: Building brands
+  link: /case_studies/bonafide.html
+  link_text: See how we built a brand for bonafide hr
+  text: We build brands that thrive in your industry and make you stand out from the rest, and increasing conversions.
+  points: 
+    - text: Brand research
+    - text: Market exploration
+    - text: Brand identity
+    - text: Logo redesign
+- name: Designing products
+  link: /case_studies/bonafide.html
+  link_text: See how we built an ecommerce solution for AW Bespoke
+  text: We believe good design shapes the digital world - and the brands who invest in it will have the greatest opportunity to make their mark.
+  points: 
+    - text: Web design
+    - text: Application design
+    - text: Creative direction
+    - text: Prototyping + interaction design
+- name: Developing solutions
+  link: /case_studies/w2gw.html
+  link_text: See how we built a web app solution for Where to go when
+  text: Our developers use their in depth knowledge to create and build products that stand the test of time.
+  points: 
+    - text: Full-stack web + mobile development
+    - text: Web maintenance + updates
+    - text: Single page web applications
+    - text: Content management solutions

@@ -47,39 +47,19 @@ title: Home
       </div>
     </div>
     <div class="row">
+      {% for approach in site.data.approaches %}
       <div class="col-4">
-        <h4 class="mb-4">Building brands</h4>
-        <p class="mb-4">We build brands that thrive in your industry and make you stand out from the rest, and increasing conversions.</p>
+        <h4 class="mb-4">{{ approach.name }}</h4>
+        <p class="mb-4">{{ approach.text }}</p>
         <ul class="mb-4">
-          <li>Brand research</li>
-          <li>Market exploration</li>
-          <li>Brand identity</li>
-          <li>Logo redesign</li>
+          <li>{{ approach.points[0].text }}</li>
+          <li>{{ approach.points[1].text }}</li>
+          <li>{{ approach.points[2].text }}</li>
+          <li>{{ approach.points[3].text }}</li>
         </ul>
-        <a class="text-secondary med-txt" href="">See how we built a brand for bonafide hr</a>
+        <a class="text-secondary med-txt" href="{{ approach.url }}">{{ approach.link_text }}</a>
       </div>
-      <div class="col-4">
-        <h4 class="mb-4">Designing products</h4>
-        <p class="mb-4">We believe good design shapes the digital world - and the brands who invest in it will have the greatest opportunity to make their mark.</p>
-        <ul class="mb-4">
-          <li>Web design</li>
-          <li>Application design</li>
-          <li>Creative direction</li>
-          <li>Prototyping + interaction design</li>
-        </ul>
-        <a class="text-secondary med-txt" href="">See how we built an ecommerce solution for AW Bespoke</a>
-      </div>
-      <div class="col-4">
-        <h4 class="mb-4">Developing solutions</h4>
-        <p class="mb-4">Our developers use their in depth knowledge to create and build products that stand the test of time.</p>
-        <ul class="mb-4">
-          <li>Full-stack web + mobile development</li>
-          <li>Web maintenance + updates</li>
-          <li>Single page web applications</li>
-          <li>Content management solutions</li>
-        </ul>
-        <a class="text-secondary med-txt" href="">See how we built a web app solution for Where to go when</a>
-      </div>
+      {% endfor %}
     </div>
   </div>
 </div>
