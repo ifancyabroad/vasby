@@ -23,7 +23,7 @@ title: Home
       <div class="case-studies d-flex flex-wrap justify-content-between">
         {% assign case_studies = site.case_studies | where: 'featured', true %}
         {% for case_study in case_studies %}
-        <div class="case-study mb-5 {% cycle 'odd', 'even' %}">
+        <div class="case-study mb-5 {% cycle 'odd', 'even' %} wow fadeInUp">
           <img class="img-fluid mb-4" src="/assets/images/{{ case_study.image }}" alt="{{ case_study.alt }}">
           <h4 class="text-primary">{{ case_study.name | downcase }}</h4>
           <p>{{ case_study.content | markdownify }}</p>
