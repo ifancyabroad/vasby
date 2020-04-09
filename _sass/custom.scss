@@ -22,6 +22,8 @@ $theme-colors: (
 $body-bg: $light;
 $body-color: #3f404b;
 
+$border-color: $secondary;
+
 $font-family-sans-serif: "Larsseit-Light", sans-serif;
 $font-family-base: $font-family-sans-serif;
 $line-height-base: 1.76;
@@ -35,6 +37,5 @@ $h5-font-size: $font-size-base * 1.25;
 $h6-font-size: $font-size-base;
 
 $headings-font-family: "Sharp-Sans-Bold", sans-serif;
-// $headings-color: $primary;
 
 $navbar-dark-color: $secondary;

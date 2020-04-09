@@ -1,13 +1,13 @@
 ---
 layout: default
-title: Home
+title: Vasby
 ---
 <div class="bg-primary text-secondary header-section">
   {% include navigation.html %}
 
   <div class="container">
     <div class="row">
-      <div class="col">
+      <div class="col wow fadeInUp">
         <div class="header-text">
           <h1 class="text-secondary mb-4">We create branding and web design for growing businesses</h1>
           <p class="text-secondary">We build brands, websites and eCommerce solutions that people and companies love. We are a small company with an agency output. We help business owners create brands and websites that look great and make money.</p>
@@ -23,7 +23,8 @@ title: Home
       <div class="case-studies d-flex flex-wrap justify-content-between">
         {% assign case_studies = site.case_studies | where: 'featured', true %}
         {% for case_study in case_studies %}
-        <div class="case-study mb-5 {% cycle 'odd', 'even' %} wow fadeInUp">
+        {% assign mod = forloop.index | modulo: 2 %}
+        <div class="case-study mb-5 wow fadeInUp" {% if mod == 0 %} data-wow-delay="0.2s" {% endif %}>
           <img class="img-fluid mb-4" src="/assets/images/{{ case_study.image }}" alt="{{ case_study.alt }}">
           <h4 class="text-primary">{{ case_study.name | downcase }}</h4>
           <p>{{ case_study.content | markdownify }}</p>
@@ -38,7 +39,7 @@ title: Home
 <div class="bg-primary text-secondary approach-section">
   <div class="container">
     <div class="row">
-      <div class="col">
+      <div class="col wow fadeInUp">
         <h6 class="spaced-letters mb-3">OUR APPROACH</h6>
         <h2 class="mb-3">User focused + goal orientated</h2>
         <p class="mb-5">Struggling to stand out in your industry? We can help. We investigate and explore your brand to offer in-depth analysis of how your digital offering could work better for you and your customers.</p>
@@ -46,7 +47,12 @@ title: Home
     </div>
     <div class="row">
       {% for approach in site.data.approaches %}
-      <div class="col-lg-4">
+      <div class="col-lg-4 wow fadeInUp"
+        {% if forloop.index0 == 1 %}
+          data-wow-delay="0.2s"
+        {% elsif forloop.index0 == 2 %}
+          data-wow-delay="0.4s"
+        {% endif %}>
         <h4 class="mb-4">{{ approach.name }}</h4>
         <p class="mb-4">{{ approach.text }}</p>
         <ul class="mb-4">
@@ -65,13 +71,13 @@ title: Home
 <div class="about-section">
   <div class="container">
     <div class="row">
-      <div class="col-lg-6">
+      <div class="col-lg-6 wow fadeInUp">
         <div class="d-flex justify-content-center">
           <h6 class="text-primary spaced-letters vertical-text m-0 mr-3">JAMES & EDGAR - FOUNDERS OF THE VASBY</h6>
           <img class="img-fluid" src="/assets/images/about_vasby.jpg" alt="Man working at computer">
         </div>
       </div>
-      <div class="col-lg-6">
+      <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.2s">
         <h6 class="text-primary spaced-letters mb-3">ABOUT</h6>
         <h2 class="text-primary mb-4">Offering cost effective digital solutions companies love.</h2>
         <p class="mb-4">With over 10 years experience, our in-house designers, developers and e-commerce experts create beautiful sites that convert visitors into long-term customers.</p>

@@ -17,12 +17,24 @@
 
   .case-study {
     width: 48%;
+  }
 
-    &.even {
-      margin-top: 3rem;
+  .case-study:nth-child(even) {
+    margin-top: 3rem;
+  }
+}
+
+@include media-breakpoint-only(xs) {
+
+  .case-studies {
+
+    .case-study {
+      width: 100%;
     }
   }
 }
+
+
 
 .approach-section {
   padding-top: 120px;
