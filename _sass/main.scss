@@ -1,10 +1,32 @@
-.header-text {
-  max-width: 857px;
+.arrow-link {
+  font-family: "Sharp-Sans-Bold", sans-serif;
+  letter-spacing: 3px;
+  font-size: 15px;
 }
 
+.navbar {
+  margin-bottom: 80px;
+}
+
+.header-section {
+  padding-top: 80px;
+  padding-bottom: 285px;
+
+  .header-text {
+    max-width: 857px;
+  }
+}
+
+
 .case-studies {
+  margin-top: -164px;
 
   .case-study {
     width: 48%;
   }
+}
+
+.approach-section {
+  padding-top: 120px;
+  padding-bottom: 125px;
 }

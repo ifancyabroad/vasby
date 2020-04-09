@@ -2,7 +2,7 @@
 layout: default
 title: Home
 ---
-<div class="bg-primary text-secondary">
+<div class="bg-primary text-secondary header-section">
   <div class="container">
     {% include navigation.html %}
   </div>
@@ -11,8 +11,8 @@ title: Home
     <div class="row">
       <div class="col">
         <div class="header-text">
-          <h2>We create branding and web design for growing businesses</h2>
-          <p>We build brands, websites and eCommerce solutions that people and companies love. We are a small company with an agency output. We help business owners create brands and websites that look great and make money.</p>
+          <h1 class="text-secondary mb-4">We create branding and web design for growing businesses</h1>
+          <p class="text-secondary">We build brands, websites and eCommerce solutions that people and companies love. We are a small company with an agency output. We help business owners create brands and websites that look great and make money.</p>
         </div>
       </div>
     </div>
@@ -25,14 +25,60 @@ title: Home
       <div class="case-studies d-flex flex-wrap justify-content-between">
         {% assign case_studies = site.case_studies | where: 'featured', true %}
         {% for case_study in case_studies %}
-        <div class="case-study">
-          <a href="{{ case_study.url }}">
-            <img class="img-fluid" src="/assets/images/{{ case_study.image }}" alt="{{ case_study.alt }}">
-            <h4>{{ case_study.name }}</h4>
-            <p>{{ case_study.content | markdownify }}</p>
-          </a>
+        <div class="case-study mb-5">
+          <img class="img-fluid mb-4" src="/assets/images/{{ case_study.image }}" alt="{{ case_study.alt }}">
+          <h4>{{ case_study.name | downcase }}</h4>
+          <p>{{ case_study.content | markdownify }}</p>
+          <a class="arrow-link" href="{{ case_study.url }}">VIEW CASE STUDY</a>
         </div>
         {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="bg-primary text-secondary approach-section">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <h6>OUR APPROACH</h6>
+        <h2>User focused + goal orientated</h2>
+        <p class="mb-5">Struggling to stand out in your industry? We can help. We investigate and explore your brand to offer in-depth analysis of how your digital offering could work better for you and your customers.</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-4">
+        <h4 class="mb-4">Building brands</h4>
+        <p>We build brands that thrive in your industry and make you stand out from the rest, and increasing conversions.</p>
+        <ul>
+          <li>Brand research</li>
+          <li>Market exploration</li>
+          <li>Brand identity</li>
+          <li>Logo redesign</li>
+        </ul>
+        <a href="">See how we built a brand for bonafide hr</a>
+      </div>
+      <div class="col-4">
+        <h4 class="mb-4">Designing products</h4>
+        <p>We believe good design shapes the digital world - and the brands who invest in it will have the greatest opportunity to make their mark.</p>
+        <ul>
+          <li>Web design</li>
+          <li>Application design</li>
+          <li>Creative direction</li>
+          <li>Prototyping + interaction design</li>
+        </ul>
+        <a href="">See how we built an ecommerce solution for AW Bespoke</a>
+      </div>
+      <div class="col-4">
+        <h4 class="mb-4">Developing solutions</h4>
+        <p>Our developers use their in depth knowledge to create and build products that stand the test of time.</p>
+        <ul>
+          <li>Full-stack web + mobile development</li>
+          <li>Web maintenance + updates</li>
+          <li>Single page web applications</li>
+          <li>Content management solutions</li>
+        </ul>
+        <a href="">See how we built a web app solution for Where to go when</a>
       </div>
     </div>
   </div>
