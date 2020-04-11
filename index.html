@@ -26,9 +26,9 @@ title: Vasby
         {% assign mod = forloop.index | modulo: 2 %}
         <div class="case-study mb-5 wow fadeInUp" {% if mod == 0 %} data-wow-delay="0.2s" {% endif %}>
           <img class="img-fluid mb-4" src="./assets/images/{{ case_study.image }}" alt="{{ case_study.alt }}">
-          <h4 class="text-primary">{{ case_study.name | downcase }}</h4>
+          <h4 class="text-primary">{{ case_study.name | downcase }} &#8212;</h4>
           <p>{{ case_study.content | markdownify }}</p>
-          <a class="spaced-letters h6" href="{{ case_study.url }}">VIEW CASE STUDY</a>
+          <a class="spaced-letters h6" href="{{ case_study.url }}">VIEW CASE STUDY &#10230;</a>
         </div>
         {% endfor %}
       </div>
@@ -62,7 +62,7 @@ title: Vasby
             <li>{{ approach.points[2].text }}</li>
             <li>{{ approach.points[3].text }}</li>
           </ul>
-          <a class="text-secondary med-txt" href="{{ approach.url }}">{{ approach.link_text }}</a>
+          <a class="text-secondary med-txt" href="{{ approach.url }}">{{ approach.link_text }} &#10230;</a>
         </div>
       </div>
       {% endfor %}
@@ -87,7 +87,7 @@ title: Vasby
         <p class="mb-4">With over 10 years experience, our in-house designers, developers and e-commerce experts create beautiful sites that convert visitors into long-term customers.</p>
         <p class="mb-4">Building brands and websites is what we do best – and what we love most. Our approach is built around being bold and brave. Our purpose-built team are unafraid to ask questions nor inclined to take a brief at face value. It helps pinpoint what really matters for your brand.</p>
         <p class="mb-4">We build brands, websites & eCommerce solutions that people and companies love. We help business owners create websites that look great and make money.</p>
-        <a class="spaced-letters h6" href="#">LET'S TALK</a>
+        <a class="spaced-letters h6" href="#">LET'S TALK &#10230;</a>
       </div>
     </div>
   </div>
