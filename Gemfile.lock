@@ -242,9 +242,8 @@ PLATFORMS
   x64-mingw32
 
 DEPENDENCIES
-  github-pages
-  jekyll
-  jekyll-feed
+  github-pages (~> 204)
+  jekyll-feed (~> 0.12)
   jekyll-seo-tag
   jekyll-sitemap
 
