@@ -25,7 +25,7 @@ title: Vasby
         {% for case_study in case_studies %}
         {% assign mod = forloop.index | modulo: 2 %}
         <div class="case-study mb-5 wow fadeInUp" {% if mod == 0 %} data-wow-delay="0.2s" {% endif %}>
-          <img class="img-fluid mb-4" src="/assets/images/{{ case_study.image }}" alt="{{ case_study.alt }}">
+          <img class="img-fluid mb-4" src="./assets/images/{{ case_study.image }}" alt="{{ case_study.alt }}">
           <h4 class="text-primary">{{ case_study.name | downcase }}</h4>
           <p>{{ case_study.content | markdownify }}</p>
           <a class="spaced-letters h6" href="{{ case_study.url }}">VIEW CASE STUDY</a>
@@ -74,7 +74,7 @@ title: Vasby
       <div class="col-lg-6 wow fadeInUp">
         <div class="d-flex justify-content-center">
           <h6 class="text-primary spaced-letters vertical-text m-0 mr-3">JAMES & EDGAR - FOUNDERS OF THE VASBY</h6>
-          <img class="img-fluid" src="/assets/images/about_vasby.jpg" alt="Man working at computer">
+          <img class="img-fluid" src="./assets/images/about_vasby.jpg" alt="Man working at computer">
         </div>
       </div>
       <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.2s">
