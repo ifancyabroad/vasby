@@ -1,57 +1,77 @@
 .navbar {
+  font-size: $font-size-lg;
   margin-bottom: 80px;
 }
 
 .header-section {
-  padding-top: 80px;
   padding-bottom: 285px;
 
   .header-text {
     max-width: 857px;
+
+    p {
+      font-size: $font-size-lg;
+    }
   }
 }
-
 
 .case-studies {
   margin-top: -164px;
 
   .case-study {
-    width: 48%;
-  }
-
-  .case-study:nth-child(even) {
-    margin-top: 3rem;
+    width: 100%;
   }
 }
 
-@include media-breakpoint-only(xs) {
+@include media-breakpoint-up(sm) {
 
   .case-studies {
 
     .case-study {
-      width: 100%;
+      width: 48%;
+    }
+
+    .case-study:nth-child(even) {
+      margin-top: $spacer * 3;
     }
   }
 }
 
-
-
-.approach-section {
-  padding-top: 120px;
-  padding-bottom: 125px;
+.approach-section,
+.about-section,
+footer {
+  padding-top: $spacer * 3;
+  padding-bottom: $spacer * 3;
 }
 
-.about-section {
-  padding-top: 132px;
-  padding-bottom: 116px;
-}
 
 footer {
-  padding-top: 103px;
-  padding-bottom: 81px;
+  font-size: $font-size-lg;
 
   .footer-title {
     max-width: 570px;
     margin-bottom: 100px;
+  }
+}
+
+@include media-breakpoint-up(md) {
+
+  .header-section {
+    padding-top: 80px;
+  }
+
+  .approach-section {
+    padding-top: 120px;
+    padding-bottom: 125px;
+  }
+
+  .about-section {
+    padding-top: 132px;
+    padding-bottom: 116px;
+  }
+
+  footer {
+    padding-top: 103px;
+    padding-bottom: 81px;
   }
 }
