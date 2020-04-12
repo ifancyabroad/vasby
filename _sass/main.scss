@@ -21,7 +21,7 @@ html {
   .round-logo {
     filter:  brightness(0) invert(1);
     position: absolute;
-    bottom: -240px;
+    bottom: -190px;
     right: 40px;
     z-index: 1;
   }
@@ -47,7 +47,46 @@ html {
   }
 }
 
+.approach-section {
+
+  .logo-container {
+    position: absolute;
+    top: -117px;
+    right: 0;
+
+    .top-half,
+    .bottom-half {
+      position: absolute;
+      right: 0;
+      width: 100%;
+      height: 50%;
+      overflow: hidden;
+    }
+
+    .top-half {
+      top: 0;
+    }
+
+    .bottom-half {
+      bottom: 0;
+
+      .round-logo {
+        filter:  brightness(0) invert(1);
+        position: absolute;
+        bottom: 0;
+      }
+    }
+  }
+}
+
 @include media-breakpoint-up(sm) {
+
+  .header-section {
+
+    .round-logo {
+      bottom: -240px;
+    }
+  }
 
   .case-studies {
 
@@ -86,6 +125,10 @@ footer {
   .approach-section {
     padding-top: 120px;
     padding-bottom: 125px;
+
+    .logo-container {
+      top: -189px;
+    }
   }
 
   .about-section {
