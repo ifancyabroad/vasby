@@ -42,11 +42,14 @@ html {
     }
   }
 
-  .round-logo {
-    filter:  brightness(0) invert(1);
+  .logo-container {
     position: absolute;
     top: -224px;
     right: 40px;
+
+    .round-logo {
+      filter:  brightness(0) invert(1);
+    }
   }
 }
 
@@ -118,7 +121,7 @@ html {
       margin-top: $spacer * 3;
     }
 
-    .round-logo {
+    .logo-container {
       top: -174px;
     }
   }
