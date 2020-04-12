@@ -17,6 +17,14 @@ html {
       font-size: $font-size-lg;
     }
   }
+
+  .round-logo {
+    filter:  brightness(0) invert(1);
+    position: absolute;
+    bottom: -240px;
+    right: 40px;
+    z-index: 1;
+  }
 }
 
 .case-studies {
