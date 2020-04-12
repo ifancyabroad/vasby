@@ -2,6 +2,10 @@ html {
   scroll-behavior: smooth;
 }
 
+.round-logo {
+  filter: invert(24%) sepia(8%) saturate(867%) hue-rotate(197deg) brightness(89%) contrast(86%);
+}
+
 .navbar {
   font-size: $font-size-lg;
   margin-bottom: 80px;
@@ -77,6 +81,28 @@ html {
       }
     }
   }
+}
+
+.about-section {
+
+  .logo-container {
+
+    .round-logo {
+      position: absolute;
+      top: -50px;
+      right: -30px;
+
+      &:first-child {
+        filter:  brightness(0) invert(1);
+        clip-path: polygon(0 40%, 80% 40%, 80% 100%, 0% 100%);
+      }
+
+      &:last-child {
+        clip-path: polygon(100% 0, 100% 100%, 80% 100%, 80% 40%, 0 40%, 0 0);
+      }
+    }
+  }
+
 }
 
 @include media-breakpoint-up(sm) {

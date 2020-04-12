@@ -7,7 +7,7 @@ $(function() {
       const diff = scrollLoc - newLoc;
       rotation += diff, scrollLoc = newLoc;
       const rotationStr = "rotate(" + rotation + "deg)";
-      $(".round-logo").css({
+      $(".scroll-rotate").css({
           "-webkit-transform": rotationStr,
           "-moz-transform": rotationStr,
           "transform": rotationStr
