@@ -6,6 +6,18 @@ html {
   filter: invert(24%) sepia(8%) saturate(867%) hue-rotate(197deg) brightness(89%) contrast(86%);
 }
 
+a.arrow-link {
+  text-decoration: none;
+
+  span {
+    transition: 0.4s;
+  }
+
+  &:hover span {
+    margin-left: 10px;
+  }
+}
+
 .navbar {
   font-size: $font-size-lg;
   margin-bottom: 80px;
@@ -28,18 +40,6 @@ html {
 
   .case-study {
     width: 100%;
-
-    a {
-      text-decoration: none;
-
-      span {
-        transition: 0.4s;
-      }
-
-      &:hover span {
-        margin-left: 10px;
-      }
-    }
   }
 
   .logo-container {

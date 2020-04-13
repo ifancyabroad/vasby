@@ -5,7 +5,7 @@ $(function() {
   $(window).scroll(function() {
       const newLoc = $(document).scrollTop();
       const diff = scrollLoc - newLoc;
-      rotation += diff, scrollLoc = newLoc;
+      rotation += diff * 0.5, scrollLoc = newLoc;
       const rotationStr = "rotate(" + rotation + "deg)";
       $(".scroll-rotate").css({
           "-webkit-transform": rotationStr,

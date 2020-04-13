@@ -29,7 +29,7 @@ title: Vasby
           <img class="img-fluid mb-4" src="./assets/images/{{ case_study.image }}" alt="{{ case_study.alt }}">
           <h4 class="text-primary">{{ case_study.name | downcase }} &#8212;</h4>
           <p>{{ case_study.content | markdownify }}</p>
-          <a class="spaced-letters h6" href="{{ case_study.url }}">VIEW CASE STUDY <span>&#10230;</span></a>
+          <a class="spaced-letters h6 arrow-link" href="{{ case_study.url }}">VIEW CASE STUDY <span>&#10230;</span></a>
         </div>
         {% endfor %}
         <div class="logo-container wow fadeInUp">
@@ -40,7 +40,7 @@ title: Vasby
   </div>
 </div>
 
-<div class="bg-primary text-secondary approach-section">
+<div class="bg-primary text-secondary approach-section" id="services">
   <div class="container">
     <div class="row">
       <div class="col wow fadeInUp">
@@ -75,7 +75,7 @@ title: Vasby
             <li>{{ approach.points[2].text }}</li>
             <li>{{ approach.points[3].text }}</li>
           </ul>
-          <a class="text-secondary med-txt" href="{{ approach.url }}">{{ approach.link_text }} &#10230;</a>
+          <a class="text-secondary med-txt arrow-link" href="{{ approach.url }}">{{ approach.link_text }} <span>&#10230;</span></a>
         </div>
       </div>
       {% endfor %}
@@ -104,7 +104,7 @@ title: Vasby
         <p class="mb-4">With over 10 years experience, our in-house designers, developers and e-commerce experts create beautiful sites that convert visitors into long-term customers.</p>
         <p class="mb-4">Building brands and websites is what we do best – and what we love most. Our approach is built around being bold and brave. Our purpose-built team are unafraid to ask questions nor inclined to take a brief at face value. It helps pinpoint what really matters for your brand.</p>
         <p class="mb-4">We build brands, websites & eCommerce solutions that people and companies love. We help business owners create websites that look great and make money.</p>
-        <a class="spaced-letters h6" href="#">LET'S TALK &#10230;</a>
+        <a class="spaced-letters h6 arrow-link" href="#">LET'S TALK <span>&#10230;</span></a>
       </div>
     </div>
   </div>
