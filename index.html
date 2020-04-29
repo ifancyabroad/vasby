@@ -25,12 +25,14 @@ title: Vasby
         {% assign case_studies = site.case_studies | where: 'featured', true %}
         {% for case_study in case_studies %}
         {% assign mod = forloop.index | modulo: 2 %}
-        <div class="case-study mb-5 wow fadeInUp" {% if mod == 0 %} data-wow-delay="0.2s" {% endif %}>
-          <img class="img-fluid mb-4" src="./assets/images/{{ case_study.image }}" alt="{{ case_study.alt }}">
+        <a class="case-study d-block mb-5 wow fadeInUp" href="{{ case_study.url }}" {% if mod == 0 %} data-wow-delay="0.2s" {% endif %}>
+          <div class="img-hover-zoom mb-4">
+            <img class="img-fluid" src="./assets/images/{{ case_study.image }}" alt="{{ case_study.alt }}">
+          </div>
           <h4 class="text-primary">{{ case_study.name | downcase }} &#8212;</h4>
           <p>{{ case_study.content | markdownify }}</p>
-          <a class="spaced-letters h6 arrow-link" href="{{ case_study.url }}">VIEW CASE STUDY <span>&#10230;</span></a>
-        </div>
+          <p class="spaced-letters h6 arrow-link">VIEW CASE STUDY <span>&#10230;</span></p>
+        </a>
         {% endfor %}
         <div class="logo-container wow fadeInUp">
           <img class="round-logo scroll-rotate" src="./assets/logos/vasby-round-logo.svg" alt="Vasby logo" width="137">

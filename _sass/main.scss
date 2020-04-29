@@ -6,8 +6,7 @@ html {
   filter: invert(24%) sepia(8%) saturate(867%) hue-rotate(197deg) brightness(89%) contrast(86%);
 }
 
-a.arrow-link {
-  text-decoration: none;
+.arrow-link {
 
   span {
     transition: 0.4s;
@@ -16,6 +15,15 @@ a.arrow-link {
   &:hover span {
     margin-left: 10px;
   }
+}
+
+.img-hover-zoom {
+  overflow: hidden;
+}
+
+.img-hover-zoom,
+.img-hover-zoom img {
+  transition: transform .5s ease;
 }
 
 .navbar {
@@ -40,6 +48,25 @@ a.arrow-link {
 
   .case-study {
     width: 100%;
+
+    &:hover {
+
+      .img-hover-zoom {
+        transform: scale(0.96);
+
+        img {
+          transform: scale(1.2);
+        }
+      }
+
+      .arrow-link {
+        color: $primary;
+
+        span {
+          margin-left: 10px;
+        }
+      } 
+    }
   }
 
   .logo-container {
