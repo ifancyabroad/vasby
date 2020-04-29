@@ -14,3 +14,16 @@ $(function() {
       });
   });
 });
+
+// Fade scroll to anchor links
+$("a.transition").click(function(event) {
+    event.preventDefault();
+    $("body").fadeOut(500, redirectPage.bind(this, this.href));
+  });
+  
+  function redirectPage(link) {
+    $("body").fadeIn(500);
+    setTimeout(function () {
+      window.location = link;
+    }, 0);
+  }
