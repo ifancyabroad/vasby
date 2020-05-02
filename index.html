@@ -27,7 +27,7 @@ title: Vasby
         {% assign mod = forloop.index | modulo: 2 %}
         <a class="case-study d-block mb-5 wow fadeInUp" href="{{ case_study.url }}" {% if mod == 0 %} data-wow-delay="0.2s" {% endif %}>
           <div class="img-hover-zoom mb-4">
-            <img class="img-fluid" src="./assets/images/{{ case_study.image }}" alt="{{ case_study.alt }}">
+            <img class="img-fluid" src="/assets/images/{{ case_study.image }}" alt="{{ case_study.alt }}">
           </div>
           <h4 class="text-primary">{{ case_study.name | downcase }} &#8212;</h4>
           <p>{{ case_study.content | markdownify }}</p>
@@ -35,24 +35,24 @@ title: Vasby
         </a>
         {% endfor %}
         <div class="logo-container wow fadeInUp">
-          <img class="round-logo scroll-rotate" src="./assets/logos/vasby-round-logo.svg" alt="Vasby logo" width="137">
+          <img class="round-logo scroll-rotate" src="/assets/logos/vasby-round-logo.svg" alt="Vasby logo" width="137">
         </div>
       </div>
     </div>
   </div>
 </div>
 
-<div class="bg-primary text-secondary approach-section" id="services">
+<div class="bg-primary text-secondary services-section" id="services">
   <div class="container">
     <div class="row">
       <div class="col wow fadeInUp">
         <div class="logo-container">
-          <img class="invisible" src="./assets/logos/vasby-round-logo.svg" alt="Vasby logo" width="137">
+          <img class="invisible" src="/assets/logos/vasby-round-logo.svg" alt="Vasby logo" width="137">
           <div class="top-half">
-            <img class="round-logo scroll-rotate" src="./assets/logos/vasby-round-logo.svg" alt="Vasby logo" width="137">
+            <img class="round-logo scroll-rotate" src="/assets/logos/vasby-round-logo.svg" alt="Vasby logo" width="137">
           </div>
           <div class="bottom-half">
-            <img class="round-logo scroll-rotate" src="./assets/logos/vasby-round-logo.svg" alt="Vasby logo" width="137">
+            <img class="round-logo scroll-rotate" src="/assets/logos/vasby-round-logo.svg" alt="Vasby logo" width="137">
           </div>
         </div>
         <h6 class="spaced-letters mb-3">OUR APPROACH</h6>
@@ -61,7 +61,7 @@ title: Vasby
       </div>
     </div>
     <div class="row">
-      {% for approach in site.data.approaches %}
+      {% for service in site.data.services %}
       <div class="col-md-4 wow fadeInUp"
         {% if forloop.index0 == 1 %}
           data-wow-delay="0.2s"
@@ -69,15 +69,15 @@ title: Vasby
           data-wow-delay="0.4s"
         {% endif %}>
         <div class="mb-5 mb-md-0">
-          <h4 class="mb-4">{{ approach.name }}</h4>
-          <p class="mb-4">{{ approach.text }}</p>
+          <h4 class="mb-4">{{ service.name }}</h4>
+          <p class="mb-4">{{ service.text }}</p>
           <ul class="mb-4">
-            <li>{{ approach.points[0].text }}</li>
-            <li>{{ approach.points[1].text }}</li>
-            <li>{{ approach.points[2].text }}</li>
-            <li>{{ approach.points[3].text }}</li>
+            <li>{{ service.points[0].text }}</li>
+            <li>{{ service.points[1].text }}</li>
+            <li>{{ service.points[2].text }}</li>
+            <li>{{ service.points[3].text }}</li>
           </ul>
-          <a class="text-secondary med-txt arrow-link" href="{{ approach.url }}">{{ approach.link_text }} <span>&#10230;</span></a>
+          <a class="text-secondary med-txt arrow-link" href="{{ service.url }}">{{ service.link_text }} <span>&#10230;</span></a>
         </div>
       </div>
       {% endfor %}
@@ -93,10 +93,10 @@ title: Vasby
           <h6 class="text-primary spaced-letters vertical-text m-0 mr-3">JAMES & EDGAR - FOUNDERS OF THE VASBY</h6>
           <div class="position-relative">
             <div class="logo-container">
-              <img class="round-logo" src="./assets/logos/vasby-round-logo.svg" alt="Vasby logo" width="137">
-              <img class="round-logo" src="./assets/logos/vasby-round-logo.svg" alt="Vasby logo" width="137">
+              <img class="round-logo" src="/assets/logos/vasby-round-logo.svg" alt="Vasby logo" width="137">
+              <img class="round-logo" src="/assets/logos/vasby-round-logo.svg" alt="Vasby logo" width="137">
             </div>
-            <img class="img-fluid" src="./assets/images/about_vasby.jpg" alt="Man working at computer">
+            <img class="img-fluid" src="/assets/images/about_vasby.jpg" alt="Man working at computer">
           </div>
         </div>
       </div>
