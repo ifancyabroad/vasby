@@ -164,6 +164,17 @@ footer {
     max-width: 570px;
     margin-bottom: 100px;
   }
+
+  .nav {
+
+    .nav-link {
+      color: $secondary;
+
+      &:hover {
+        color: rgba(#fff, .75);
+      }
+    }
+  }
 }
 
 @include media-breakpoint-up(md) {
