@@ -1,8 +1,8 @@
 - name: Work
-  link: ./#work
+  link: /#work
 - name: About
-  link: ./#about
+  link: /#about
 - name: Services
-  link: ./#services
+  link: /#services
 - name: Contact
-  link: ./#contact
+  link: /#contact
