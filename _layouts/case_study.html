@@ -8,19 +8,19 @@ layout: default
     <div class="row">
       <div class="col wow fadeInUp">
         <div class="header-text mx-auto text-center">
-          <h1 class="text-secondary mb-4">Delivering a dynamic long  
-            long text here new brand identity</h1>
-          <p class="text-secondary">Spain’s leading courier company asked us to help them remix their brand identity to reflect their new digital approach.</p>
+          <img class="round-logo scroll-rotate mb-3" src="{{ 'assets/logos/vasby-round-logo.svg' | relative_url }}" alt="Vasby logo" width="80">
+
+          <h1 class="text-secondary mb-4">{{ page.title }}</h1>
 
           <div class="d-flex justify-content-center">
             <div class="p-3 mr-5">
-              <p class="font-weight-bold mb-0">Client</p>
-              <p class="mb-0">{{ page.name }}</p>
+              <h5 class="mb-0">Client</h5>
+              <p class="text-lg mb-0">{{ page.client }}</p>
             </div>
 
             <div class="p-3">
-              <p class="font-weight-bold mb-0">Project Type</p>
-              <p class="mb-0">Travel web application</p>
+              <h5 class="mb-0">Project Type</h5>
+              <p class="text-lg mb-0">{{ page.type }}</p>
             </div>
           </div>
         </div>
@@ -41,10 +41,8 @@ layout: default
 
   <div class="row align-items-center">
     <div class="col-md-6 wow fadeInUp">
-      <h4 class="text-primary mb-4">Stepping up the e-commerce design of a small to medium company.</h4>
-      <p class="mb-4">Native Shoes has an incredible product and loyal brand advocates, but needed help scaling their online business to keep up with customer demands. We helped their team better understand their product and market.</p>
-      <p class="mb-4">Native Shoes has an incredible product and loyal brand advocates, but needed help scaling their online business to keep up with customer demands. We helped their team better understand their product and market. </p>
-      <p>The result: a newly redesigned, responsive website that contributed to a sales increase of over 30% in the first quarter after launch.</p>
+      <h4 class="text-primary mb-4">{{ page.content_title }}</h4>
+      {{ page.content | markdownify }}
     </div>
     <div class="col-md-6 wow fadeInUp" data-wow-delay="0.2s">
       <img class="img-fluid" src="{{ 'assets/images/' | append: page.image | relative_url }}" alt="{{ page.alt }}">
@@ -54,8 +52,8 @@ layout: default
   <div class="row">
     <div class="col wow fadeInUp">
       <div class="text-center my-5">
-        <h2 class="text-primary">“The way Internet advertising has behaved lately,<br> it may well take 50 years to get there.”</h2>
-        <p>Scott Calver - CEO, Where 2 Go When</p>
+        <h2 class="text-primary">{{ page.quote }}</h2>
+        <p>{{ page.quote_label }}</p>
       </div>
     </div>
   </div>
@@ -71,11 +69,23 @@ layout: default
 
   <div class="row">
     <div class="col wow fadeInUp">
-      <div class="case-study-next-image"></div>
+      
+      <div class="carousel">
+        {% assign case_studies = site.case_studies | where: 'featured', true %}
+        {% for case_study in case_studies %}
+        <div class="carousel-cell case-study-next-image">
+          <a href="{{ case_study.url | relative_url }}">
+            <div class="view-project">
+              <p class="case-study-link mb-0">VIEW<br>PROJECT</p>
+            </div>
+          </a>
+        </div>
+        {% endfor %}
+      </div>
 
-      <div class="d-flex justify-content-between py-5">
-        <a class="next-previous" href=""><span class="mr-3">&#10229;</span> PREVIOUS</a>
-        <a class="next-previous" href="">NEXT <span class="ml-3">&#10230;</span></a>
+      <div class="d-flex justify-content-between mb-5">
+        <a class="case-study-link previous"><span class="mr-3">&#10229;</span> PREVIOUS</a>
+        <a class="case-study-link next">NEXT <span class="ml-3">&#10230;</span></a>
       </div>
     </div>
   </div>
