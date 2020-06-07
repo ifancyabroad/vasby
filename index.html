@@ -42,74 +42,81 @@ title: Vasby
   </div>
 </div>
 
-<div class="bg-primary text-secondary services-section" id="services">
+<div class="bg-pink-gradient">
+  <div class="services-section" id="services">
+    <div class="container">
+      <div class="row">
+        <div class="col wow fadeInUp">
+          <div class="logo-container">
+            <img class="round-logo scroll-rotate" src="{{ 'assets/logos/vasby-round-logo.svg' | relative_url }}" alt="Vasby logo" width="137">
+          </div>
+          <h6 class="spaced-letters mb-3">OUR APPROACH</h6>
+          <h2 class="mb-3">User focused + goal orientated</h2>
+          <p class="mb-5">Struggling to stand out in your industry? We can help. We investigate and explore your brand to offer in-depth analysis of how your digital offering could work better for you and your customers.</p>
+        </div>
+      </div>
+      <div class="row">
+        {% for service in site.data.services %}
+        <div class="col-md-4 wow fadeInUp"
+          {% if forloop.index0 == 1 %}
+            data-wow-delay="0.2s"
+          {% elsif forloop.index0 == 2 %}
+            data-wow-delay="0.4s"
+          {% endif %}>
+          <div class="mb-5 mb-md-0">
+            <h4 class="mb-4">{{ service.name }}</h4>
+            <p class="mb-4">{{ service.text }}</p>
+            <ul class="mb-4">
+              <li>{{ service.points[0].text }}</li>
+              <li>{{ service.points[1].text }}</li>
+              <li>{{ service.points[2].text }}</li>
+              <li>{{ service.points[3].text }}</li>
+            </ul>
+            <a class="med-txt arrow-link" href="{{ service.url }}">
+              {{ service.link_text }} <br>
+              {{ service.link_company }}<span>&#10230;</span>
+            </a>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+
   <div class="container">
     <div class="row">
       <div class="col wow fadeInUp">
-        <div class="logo-container">
-          <img class="invisible" src="{{ 'assets/logos/vasby-round-logo.svg' | relative_url }}" alt="Vasby logo" width="137">
-          <div class="top-half">
-            <img class="round-logo scroll-rotate" src="{{ 'assets/logos/vasby-round-logo.svg' | relative_url }}" alt="Vasby logo" width="137">
-          </div>
-          <div class="bottom-half">
-            <img class="round-logo scroll-rotate" src="{{ 'assets/logos/vasby-round-logo.svg' | relative_url }}" alt="Vasby logo" width="137">
-          </div>
-        </div>
-        <h6 class="spaced-letters mb-3">OUR APPROACH</h6>
-        <h2 class="mb-3">User focused + goal orientated</h2>
-        <p class="mb-5">Struggling to stand out in your industry? We can help. We investigate and explore your brand to offer in-depth analysis of how your digital offering could work better for you and your customers.</p>
-      </div>
-    </div>
-    <div class="row">
-      {% for service in site.data.services %}
-      <div class="col-md-4 wow fadeInUp"
-        {% if forloop.index0 == 1 %}
-          data-wow-delay="0.2s"
-        {% elsif forloop.index0 == 2 %}
-          data-wow-delay="0.4s"
-        {% endif %}>
-        <div class="mb-5 mb-md-0">
-          <h4 class="mb-4">{{ service.name }}</h4>
-          <p class="mb-4">{{ service.text }}</p>
-          <ul class="mb-4">
-            <li>{{ service.points[0].text }}</li>
-            <li>{{ service.points[1].text }}</li>
-            <li>{{ service.points[2].text }}</li>
-            <li>{{ service.points[3].text }}</li>
-          </ul>
-          <a class="text-secondary med-txt arrow-link" href="{{ service.url }}">
-            {{ service.link_text }} <br>
-            {{ service.link_company }}<span>&#10230;</span>
-          </a>
+        <div class="cta-lg text-center mx-auto mb-5">
+          <h1 class="mb-5">Let's create something great together.</h1>
+          <a class="spaced-letters h6 arrow-link" href="#">LET'S TALK <span>&#10230;</span></a>
         </div>
       </div>
-      {% endfor %}
     </div>
   </div>
-</div>
-
-<div class="about-section overflow-hidden" id="about">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-6 wow fadeInUp">
-        <div class="d-flex justify-content-center mb-5 mb-md-0">
-          <h6 class="text-primary spaced-letters vertical-text m-0 mr-3">JAMES & EDGAR - FOUNDERS OF THE VASBY</h6>
-          <div class="position-relative">
-            <div class="logo-container">
-              <img class="round-logo" src="{{ 'assets/logos/vasby-round-logo.svg' | relative_url }}" alt="Vasby logo" width="137">
-              <img class="round-logo" src="{{ 'assets/logos/vasby-round-logo.svg' | relative_url }}" alt="Vasby logo" width="137">
+  
+  <div class="about-section overflow-hidden" id="about">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 wow fadeInUp">
+          <div class="d-flex justify-content-center mb-5 mb-md-0">
+            <h6 class="text-primary spaced-letters vertical-text m-0 mr-3">JAMES & EDGAR - FOUNDERS OF THE VASBY</h6>
+            <div class="position-relative">
+              <div class="logo-container">
+                <img class="round-logo" src="{{ 'assets/logos/vasby-round-logo.svg' | relative_url }}" alt="Vasby logo" width="137">
+                <img class="round-logo" src="{{ 'assets/logos/vasby-round-logo.svg' | relative_url }}" alt="Vasby logo" width="137">
+              </div>
+              <img class="img-fluid" src="{{ 'assets/images/about_vasby.jpg' | relative_url }}" alt="Man working at computer">
             </div>
-            <img class="img-fluid" src="{{ 'assets/images/about_vasby.jpg' | relative_url }}" alt="Man working at computer">
           </div>
         </div>
-      </div>
-      <div class="col-md-6 wow fadeInUp" data-wow-delay="0.2s">
-        <h6 class="text-primary spaced-letters mb-3">ABOUT</h6>
-        <h2 class="text-primary mb-4">Offering cost effective digital solutions companies love.</h2>
-        <p class="mb-4">With over 10 years experience, our in-house designers, developers and e-commerce experts create beautiful sites that convert visitors into long-term customers.</p>
-        <p class="mb-4">Building brands and websites is what we do best – and what we love most. Our approach is built around being bold and brave. Our purpose-built team are unafraid to ask questions nor inclined to take a brief at face value. It helps pinpoint what really matters for your brand.</p>
-        <p class="mb-4">We build brands, websites & eCommerce solutions that people and companies love. We help business owners create websites that look great and make money.</p>
-        <a class="spaced-letters h6 arrow-link" href="#">LET'S TALK <span>&#10230;</span></a>
+        <div class="col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+          <h6 class="text-primary spaced-letters mb-3">ABOUT</h6>
+          <h2 class="text-primary mb-4">Offering cost effective digital solutions companies love.</h2>
+          <p class="mb-4">With over 10 years experience, our in-house designers, developers and e-commerce experts create beautiful sites that convert visitors into long-term customers.</p>
+          <p class="mb-4">Building brands and websites is what we do best – and what we love most. Our approach is built around being bold and brave. Our purpose-built team are unafraid to ask questions nor inclined to take a brief at face value. It helps pinpoint what really matters for your brand.</p>
+          <p class="mb-4">We build brands, websites & eCommerce solutions that people and companies love. We help business owners create websites that look great and make money.</p>
+          <a class="spaced-letters h6 arrow-link" href="#">LET'S TALK <span>&#10230;</span></a>
+        </div>
       </div>
     </div>
   </div>
