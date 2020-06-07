@@ -10,6 +10,7 @@ alt: Some alt text
 featured: true
 quote: “The way Internet advertising has behaved lately,<br> it may well take 50 years to get there.”
 quote_label: Scott Calver - CEO, Where 2 Go When
+content_title: Stepping up the e-commerce design of a small to medium company.
 ---
 <p class="mb-4">Native Shoes has an incredible product and loyal brand advocates, but needed help scaling their online business to keep up with customer demands. We helped their team better understand their product and market.</p>
 <p class="mb-4">Native Shoes has an incredible product and loyal brand advocates, but needed help scaling their online business to keep up with customer demands. We helped their team better understand their product and market.</p>
