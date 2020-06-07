@@ -3,6 +3,8 @@
 }
 
 .bg-pink-gradient {
+  position: relative;
+  z-index: 1;
   background-image: linear-gradient(to bottom, #fbe4e4, #e4e4e3);
 }
 
@@ -47,6 +49,7 @@
   margin-top: -164px;
 
   .case-study {
+    display: block;
     width: 100%;
 
     &:hover {
@@ -76,6 +79,36 @@
 
     .round-logo {
       filter:  brightness(0) invert(1);
+    }
+  }
+
+}
+
+.see-more-container {
+  height: 60px;
+  margin-top: 60px;
+
+  .see-more {
+    cursor: pointer;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, 70%);
+    height: 183px;
+    width: 183px;
+    border-radius: 50%;
+    background-color: $primary;
+    color: $secondary;
+    transition: 0.2s;
+
+    &:hover {
+      transform: translate(-50%, 50%);
+    }
+    
+    p {
+      text-align: center;
+      line-height: 1.2;
+      margin-top: .75rem;
     }
   }
 }

@@ -29,6 +29,17 @@ $( document ).ready(function() {
       window.location = link;
     }, 0);
   }
+
+  // See more button
+  $('.see-more').click(function() {
+    $('.case-study').each(function(i) {
+      if ($(this).hasClass('d-none')) {
+        $(this).removeClass('d-none');
+      }
+    });
+
+    $('.see-more-container').addClass('d-none');
+  })
   
   // Case study carousel
   var $carousel = $('.carousel').flickity();

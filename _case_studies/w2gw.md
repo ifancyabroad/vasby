@@ -1,14 +1,14 @@
 ---
 short_name: w2gw
-name: Where to Go When
-tag: Creating a modern and striking human resources brand and digital platform from conception to open business.
-title: Building a travel startup from the ground up to Virgin funding
-client: Bonafide hr
+order_number: 1
+name: Where 2 Go When
+tag: Building a travel startup from the ground up to Virgin funding
+client: Where 2 Go When
 type: Website, Web App
 image: case_study_image.jpg
 alt: Some alt text
 featured: true
-quote: “The way Internet advertising has behaved lately,<br> it may well take 50 years to get there.”
+quote: “To have the guidance and knowledge from the väsby team really helped when starting up a business from the ground up.”
 quote_label: Scott Calver - CEO, Where 2 Go When
 content_title: Stepping up the e-commerce design of a small to medium company.
 ---

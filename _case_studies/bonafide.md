@@ -1,17 +1,17 @@
 ---
 short_name: bonafide
-name: Bonafide hr
-tag: Creating a modern and striking human resources brand and digital platform from conception to open business.
-title: Building a travel startup from the ground up to Virgin funding
-client: Bonafide hr
-type: Website, Web App
+order_number: 3
+name: bonafide hr
+tag: A new modern take on HR - taking a vibrant approach in a traditional industry
+client: bonafide hr
+type: Full Brand & Website Design
 image: case_study_image.jpg
 alt: Some alt text
 featured: true
-quote: “The way Internet advertising has behaved lately,<br> it may well take 50 years to get there.”
-quote_label: Scott Calver - CEO, Where 2 Go When
-content_title: Stepping up the e-commerce design of a small to medium company.
+quote: “We really appreciate the patience and understanding of the väsby team to get this project completed so smoothly, we love the end result.”
+quote_label: Shaheen Kadri - Director, bonafide hr
+content_title: Creating a fresh brand and online presence from pixel zero to launch.
 ---
-<p class="mb-4">Native Shoes has an incredible product and loyal brand advocates, but needed help scaling their online business to keep up with customer demands. We helped their team better understand their product and market.</p>
-<p class="mb-4">Native Shoes has an incredible product and loyal brand advocates, but needed help scaling their online business to keep up with customer demands. We helped their team better understand their product and market.</p>
-<p>The result: a newly redesigned, responsive website that contributed to a sales increase of over 30% in the first quarter after launch.</p>
+<p class="mb-4">When the opportunity came to work with a new HR company that wanted to take on the startup industry, we jumped at the chance.</p>
+<p class="mb-4">We started our research and found some very traditional brands within the HR world. There didn’t seem to be too many of the larger companies within the UK and London market that really focused on design. We felt this was a massive gap in the market we could exploit.</p>
+<p>We set about creating an electric, vibrant brand identity that would set bonafide apart in the HR market and also sit nicely within a younger tech/startup market. This was then bought together in a fresh modern website to launch the company. The company has now gone on to work with big fashion and tech companies and has had huge success.</p>

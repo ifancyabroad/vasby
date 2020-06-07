@@ -22,20 +22,27 @@ title: Vasby
   <div class="row">
     <div class="col">
       <div class="case-studies d-flex flex-wrap justify-content-between" id="work">
-        {% assign case_studies = site.case_studies | where: 'featured', true %}
+        {% assign case_studies = site.case_studies | where: 'featured', true | sort: 'order_number' %}
         {% for case_study in case_studies %}
         {% assign mod = forloop.index | modulo: 2 %}
-        <a class="case-study d-block mb-5 wow fadeInUp" href="{{ case_study.url | relative_url }}" {% if mod == 0 %} data-wow-delay="0.2s" {% endif %}>
+        <a class="case-study mb-5 wow fadeInUp {% if forloop.index > 4 %}d-none{% endif %}" href="{{ case_study.url | relative_url }}"
+          {% if mod == 0 %} data-wow-delay="0.2s" {% endif %}>
           <div class="img-hover-zoom mb-4">
             <img class="img-fluid" src="{{ 'assets/images/' | append: case_study.image | relative_url }}" alt="{{ case_study.alt }}">
           </div>
-          <h4 class="text-primary">{{ case_study.name | downcase }} &#8212;</h4>
-          <p>{{ case_study.tag }}</p>
+          <h4 class="text-primary">{{ case_study.name }}</h4>
+          <p class="text-lg">{{ case_study.tag }}</p>
           <p class="spaced-letters h6 arrow-link">VIEW CASE STUDY <span>&#10230;</span></p>
         </a>
         {% endfor %}
         <div class="logo-container wow fadeInUp">
           <img class="round-logo scroll-rotate" src="{{ 'assets/logos/vasby-round-logo.svg' | relative_url }}" alt="Vasby logo" width="137">
+        </div>
+      </div>
+
+      <div class="see-more-container">
+        <div class="see-more">
+          <p class="spaced-letters med-txt mb-0">SEE<br>MORE<br><span class="text-lg">&#8595;</span></p>
         </div>
       </div>
     </div>
