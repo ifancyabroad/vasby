@@ -1,6 +1,9 @@
 - name: Instagram
   link: https://www.instagram.com/the_vasby/
+  font_awesome: fab fa-instagram
 - name: Twitter
   link: https://twitter.com/VasbyStudio
+  font_awesome: fab fa-twitter
 - name: Facebook
   link: https://www.facebook.com/thevasby/
+  font_awesome: fab fa-facebook-f
