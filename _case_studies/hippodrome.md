@@ -1,13 +1,13 @@
 ---
 short_name: hippodrome
 order_number: 2
+featured: true
 name: Hippodrome Online
 tag: Building an online gaming site geared for increased conversions
 client: Hippodrome Online
 type: Website Design, App Design
-image: case_study_image.jpg
+featured_image: hippodrome_online_homepage.jpg
 alt: Some alt text
-featured: true
 quote: “Website and web app that contributed to a traffic increase of over 6% in the first quarter after launch.”
 quote_label: 
 content_title: Utilising UX and UI design to transform an online gaming company.

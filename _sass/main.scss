@@ -1,4 +1,4 @@
-body {
+html, body {
   overflow-x: hidden;
 }
 
@@ -45,7 +45,7 @@ body {
   }
 
   .header-text {
-    max-width: 857px;
+    max-width: 1020px;
   }
 }
 
@@ -160,6 +160,10 @@ body {
 
     .case-study {
       width: 48%;
+
+      .tag-line {
+        font-size: 1.5rem;
+      }
     }
 
     .case-study:nth-child(even) {
@@ -198,6 +202,13 @@ footer {
 
   .header-section {
     padding-top: 80px;
+
+    .header-text {
+
+      h2 {
+        font-size: 46px;
+      }
+    }
   }
 
   .services-section {
@@ -228,10 +239,13 @@ footer {
 }
 
 .case-study-link {
-  font-family: "Larsseit", sans-serif;
+  font-weight: $font-weight-bold;
   letter-spacing: 3px;
-  font-weight: bold;
   cursor: pointer;
+}
+
+.case-study-screenshot {
+  margin-bottom: 30px;
 }
 
 .case-study-next-image {

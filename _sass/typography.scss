@@ -2,15 +2,14 @@
   letter-spacing: 3px;
 }
 
-.text-lg {
-  font-size: $font-size-lg;
-}
-
-.med-txt {
-  font-family: "Larsseit", sans-serif;
-}
-
 .vertical-text {
   writing-mode: vertical-rl;
   white-space: nowrap;
+}
+
+@include media-breakpoint-up(sm) {
+
+  .text-lg {
+    font-size: $font-size-lg;
+  }
 }

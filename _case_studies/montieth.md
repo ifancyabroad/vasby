@@ -1,13 +1,13 @@
 ---
 short_name: montieth
 order_number: 6
+featured: true
 name: Montieth & Co
 tag: Delivering a dynamic new identity for a global public relations company
 client: Montieth & Co
 type: Full Company Rebrand
-image: case_study_image.jpg
+featured_image: montieth_homepage.jpg
 alt: Some alt text
-featured: true
 quote: “The väsby team were so helpful and patient, the whole of the company loved the end result”
 quote_label: Becky Nye - Director, EMEA - Montieth & Company.
 content_title: After working on some sub-brands for Montieth & Co, we connected on revamping their full brand offering.

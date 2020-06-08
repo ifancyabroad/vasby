@@ -28,10 +28,10 @@ title: Vasby
         <a class="case-study mb-5 wow fadeInUp {% if forloop.index > 4 %}d-none{% endif %}" href="{{ case_study.url | relative_url }}"
           {% if mod == 0 %} data-wow-delay="0.2s" {% endif %}>
           <div class="img-hover-zoom mb-4">
-            <img class="img-fluid" src="{{ 'assets/images/' | append: case_study.image | relative_url }}" alt="{{ case_study.alt }}">
+            <img class="img-fluid" src="{{ 'assets/images/' | append: case_study.featured_image | relative_url }}" alt="{{ case_study.alt }}">
           </div>
-          <h4 class="text-primary">{{ case_study.name }}</h4>
-          <p class="text-lg">{{ case_study.tag }}</p>
+          <h5 class="text-primary">{{ case_study.name }}</h5>
+          <p class="tag-line">{{ case_study.tag }}</p>
           <p class="spaced-letters h6 arrow-link">VIEW CASE STUDY <span>&#10230;</span></p>
         </a>
         {% endfor %}
@@ -42,7 +42,7 @@ title: Vasby
 
       <div class="see-more-container">
         <div class="see-more">
-          <p class="spaced-letters med-txt mb-0">SEE<br>MORE<br><span class="text-lg">&#8595;</span></p>
+          <p class="spaced-letters font-weight-normal mb-0">SEE<br>MORE<br><span class="text-lg">&#8595;</span></p>
         </div>
       </div>
     </div>
@@ -57,7 +57,7 @@ title: Vasby
           <div class="logo-container">
             <img class="round-logo scroll-rotate" src="{{ 'assets/logos/vasby-round-logo.svg' | relative_url }}" alt="Vasby logo" width="137">
           </div>
-          <h6 class="spaced-letters mb-3">OUR APPROACH</h6>
+          <h6 class="spaced-letters font-weight-bold mb-3">OUR APPROACH</h6>
           <h2 class="mb-3">User focused + goal orientated</h2>
           <p class="mb-5">Struggling to stand out in your industry? We can help. We investigate and explore your brand to offer in-depth analysis of how your digital offering could work better for you and your customers.</p>
         </div>
@@ -79,7 +79,7 @@ title: Vasby
               <li>{{ service.points[2].text }}</li>
               <li>{{ service.points[3].text }}</li>
             </ul>
-            <a class="med-txt arrow-link" href="{{ service.url }}">
+            <a class="font-weight-normal arrow-link" href="{{ service.link | relative_url }}">
               {{ service.link_text }} <br>
               {{ service.link_company }}<span>&#10230;</span>
             </a>
@@ -90,12 +90,12 @@ title: Vasby
     </div>
   </div>
 
-  <div class="container">
+  <div class="container" id="contact">
     <div class="row">
       <div class="col wow fadeInUp">
         <div class="cta-lg text-center mx-auto mb-5">
           <h1 class="mb-5">Let's create something great together.</h1>
-          <a class="spaced-letters h6 arrow-link" href="#">LET'S TALK <span>&#10230;</span></a>
+          <a class="spaced-letters h6 arrow-link" href="mailto:studio@thevasby.co.uk">LET'S TALK <span>&#10230;</span></a>
         </div>
       </div>
     </div>
@@ -106,7 +106,7 @@ title: Vasby
       <div class="row">
         <div class="col-md-6 wow fadeInUp">
           <div class="d-flex justify-content-center mb-5 mb-md-0">
-            <h6 class="text-primary spaced-letters vertical-text m-0 mr-3">JAMES & EDGAR - FOUNDERS OF THE VASBY</h6>
+            <h6 class="text-primary spaced-letters vertical-text font-weight-bold m-0 mr-3">JAMES & EDGAR - FOUNDERS OF THE VASBY</h6>
             <div class="position-relative">
               <div class="logo-container">
                 <img class="round-logo" src="{{ 'assets/logos/vasby-round-logo.svg' | relative_url }}" alt="Vasby logo" width="137">
@@ -117,12 +117,12 @@ title: Vasby
           </div>
         </div>
         <div class="col-md-6 wow fadeInUp" data-wow-delay="0.2s">
-          <h6 class="text-primary spaced-letters mb-3">ABOUT</h6>
+          <h6 class="text-primary spaced-letters font-weight-bold mb-3">ABOUT</h6>
           <h2 class="text-primary mb-4">Offering cost effective digital solutions companies love.</h2>
           <p class="mb-4">With over 10 years experience, our in-house designers, developers and e-commerce experts create beautiful sites that convert visitors into long-term customers.</p>
           <p class="mb-4">Building brands and websites is what we do best – and what we love most. Our approach is built around being bold and brave. Our purpose-built team are unafraid to ask questions nor inclined to take a brief at face value. It helps pinpoint what really matters for your brand.</p>
           <p class="mb-4">We build brands, websites & eCommerce solutions that people and companies love. We help business owners create websites that look great and make money.</p>
-          <a class="spaced-letters h6 arrow-link" href="#">LET'S TALK <span>&#10230;</span></a>
+          <a class="spaced-letters h6 arrow-link" href="mailto:studio@thevasby.co.uk">LET'S TALK <span>&#10230;</span></a>
         </div>
       </div>
     </div>

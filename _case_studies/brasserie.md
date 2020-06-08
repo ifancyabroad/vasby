@@ -1,13 +1,13 @@
 ---
 short_name: brasserie
 order_number: 5
+featured: true
 name: Brasserie Blanc
 tag: Creating a results driven communications plan for a world-renowned restaurant chain
 client: Brasserie Blanc
 type: Digital Marketing Campaign
-image: case_study_image.jpg
+featured_image: brasserie_blanc_homepage.jpg
 alt: Some alt text
-featured: true
 quote: “Increased interactions by 16% and helped to increase the click through rate by 21% based on the previous 6 campaigns”
 quote_label: 
 content_title: Finding a way to raise engagemnt and interaction with new and long-term customers.

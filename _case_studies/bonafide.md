@@ -1,13 +1,13 @@
 ---
 short_name: bonafide
 order_number: 3
+featured: true
 name: bonafide hr
 tag: A new modern take on HR - taking a vibrant approach in a traditional industry
 client: bonafide hr
 type: Full Brand & Website Design
-image: case_study_image.jpg
+featured_image: bonafidehr_homepage.jpg
 alt: Some alt text
-featured: true
 quote: “We really appreciate the patience and understanding of the väsby team to get this project completed so smoothly, we love the end result.”
 quote_label: Shaheen Kadri - Director, bonafide hr
 content_title: Creating a fresh brand and online presence from pixel zero to launch.

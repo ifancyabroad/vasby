@@ -1,13 +1,13 @@
 ---
 short_name: stabb
 order_number: 4
+featured: true
 name: Stabb Interiors
 tag: A new visual presence for the most innovative London office interior agency
 client: Stabb Interiors
 type: Website Design
-image: case_study_image.jpg
+featured_image: stabb_homepage.jpg
 alt: Some alt text
-featured: true
 quote: “We really love what the team has done, it’s modernised our digital presence”
 quote_label: James Stabb - Project Director, Stabb Interiors
 content_title: From re-platforming the website to delivering an SEO strategy, here’s how väsby helped one of the biggest office fitout companies in the UK.

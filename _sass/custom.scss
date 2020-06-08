@@ -26,8 +26,11 @@ $body-color: #3f404b;
 
 $border-color: $secondary;
 
-$font-family-sans-serif: "Larsseit-Light", sans-serif;
+$font-family-sans-serif: "Larsseit", sans-serif;
 $font-family-base: $font-family-sans-serif;
+$font-weight-light: 300;
+$font-weight-bold: 700;
+$font-weight-base: $font-weight-light;
 $line-height-base: 1.76;
 
 $font-size-base: 1rem;
