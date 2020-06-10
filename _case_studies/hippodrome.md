@@ -10,6 +10,7 @@ featured_image: hippodrome_online_homepage.jpg
 alt: Some alt text
 quote: “Website and web app that contributed to a traffic increase of over 6% in the first quarter after launch.”
 quote_label: 
+site_url: https://www.hippodromeonline.com
 content_title: Utilising UX and UI design to transform an online gaming company.
 ---
 <p class="mb-4">Working closely with all at The Hippodrome Casino - we set out to improve the overall design and conversions of their online gaming offering.</p>

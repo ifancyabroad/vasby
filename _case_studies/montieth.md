@@ -10,6 +10,7 @@ featured_image: montieth_homepage.jpg
 alt: Some alt text
 quote: “The väsby team were so helpful and patient, the whole of the company loved the end result”
 quote_label: Becky Nye - Director, EMEA - Montieth & Company.
+site_url: https://stabb.co.uk
 content_title: After working on some sub-brands for Montieth & Co, we connected on revamping their full brand offering.
 ---
 <p class="mb-4">The problem was that whilt the PR agency had throived - their brand had aged somewhat and needed a refresh. The brief was to modernise the brand, so that they could communicate better with various audiences.</p>

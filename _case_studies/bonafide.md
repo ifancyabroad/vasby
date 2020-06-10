@@ -10,6 +10,7 @@ featured_image: bonafidehr_homepage.jpg
 alt: Some alt text
 quote: “We really appreciate the patience and understanding of the väsby team to get this project completed so smoothly, we love the end result.”
 quote_label: Shaheen Kadri - Director, bonafide hr
+site_url: https://bonafidehr.co.uk
 content_title: Creating a fresh brand and online presence from pixel zero to launch.
 ---
 <p class="mb-4">When the opportunity came to work with a new HR company that wanted to take on the startup industry, we jumped at the chance.</p>

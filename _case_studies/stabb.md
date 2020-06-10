@@ -10,6 +10,7 @@ featured_image: stabb_homepage.jpg
 alt: Some alt text
 quote: “We really love what the team has done, it’s modernised our digital presence”
 quote_label: James Stabb - Project Director, Stabb Interiors
+site_url: https://stabb.co.uk
 content_title: From re-platforming the website to delivering an SEO strategy, here’s how väsby helped one of the biggest office fitout companies in the UK.
 ---
 <p class="mb-4">When Stabb Interiors came to us, their current offering lacked the visual element that their work deserved. They needed to give their current website a facelift that would help to showcase all of the great projects they had worked on and find a way to get prospective clients to see it.</p>

@@ -74,7 +74,7 @@ layout: default
         {% assign case_studies = site.case_studies | where: 'featured', true %}
         {% for case_study in case_studies %}
         <div class="carousel-cell case-study-next-image">
-          <a href="{{ case_study.url | relative_url }}">
+          <a href="{{ case_study.site_url }}" target="_blank">
             <div class="view-project">
               <p class="case-study-link mb-0">VIEW<br>PROJECT</p>
             </div>
