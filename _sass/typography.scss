@@ -2,6 +2,10 @@
   letter-spacing: 3px;
 }
 
+.font-body {
+  font-family: $font-family-base;
+}
+
 .vertical-text {
   writing-mode: vertical-rl;
   white-space: nowrap;
@@ -11,5 +15,10 @@
 
   .text-lg {
     font-size: $font-size-lg;
+  }
+
+  .text-xl {
+    font-size: $font-size-xl;
+    line-height: $line-height-lg;
   }
 }
