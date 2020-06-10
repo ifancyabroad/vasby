@@ -70,7 +70,7 @@ title: Vasby
           {% elsif forloop.index0 == 2 %}
             data-wow-delay="0.4s"
           {% endif %}>
-          <div>
+          <div {% if forloop.last == false %} class="mb-5 mb-md-0" {% endif %}>
             <h4 class="mb-4">{{ service.name }}</h4>
             <p class="mb-4">{{ service.text }}</p>
             <ul class="mb-4">
