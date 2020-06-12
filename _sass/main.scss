@@ -182,15 +182,15 @@ footer {
 
 footer {
 
-  .nav {
+  .clipboard-copy {
+    cursor: pointer;
+  }
 
-    .nav-link {
-      color: $secondary;
-
-      &:hover {
-        color: rgba(#fff, .75);
-      }
-    }
+  .copied {
+    text-align: center;
+    color: $primary;
+    background-color: $secondary;
+    max-width: 150px;
   }
 }
 
