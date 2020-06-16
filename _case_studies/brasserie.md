@@ -10,7 +10,7 @@ featured_image: brasserie_blanc_homepage.jpg
 alt: Some alt text
 quote: “Increased interactions by 16% and helped to increase the click through rate by 21% based on the previous 6 campaigns”
 quote_label: 
-site_url: https://bonafidehr.co.uk
+site_url: https://brasserieblanc.com
 content_title: Finding a way to raise engagemnt and interaction with new and long-term customers.
 ---
 <p class="mb-4">The problem Brasserie Blanc were having was how they could use their customer database and increase engagement with them - currently struggling to find the right offering.</p>

@@ -1,7 +1,7 @@
 - name: Building brands
-  link: /case_studies/bonafide.html
+  link: /case_studies/montieth.html
   link_text: See how we built a brand for
-  link_company: bonafide hr
+  link_company: Montieth & Co
   text: We build brands that thrive in your industry and make you stand out from the rest, and increasing conversions.
   points: 
     - text: Brand research
@@ -10,8 +10,8 @@
     - text: Logo redesign
 - name: Designing products
   link: /case_studies/bonafide.html
-  link_text: See how we built an ecommerce solution for
-  link_company: AW Bespoke
+  link_text: See how we built a website for
+  link_company: bonafide hr
   text: We believe good design shapes the digital world and the brands who invest in it will have the greatest opportunity to make their mark.
   points: 
     - text: Web design
