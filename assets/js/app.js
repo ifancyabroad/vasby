@@ -41,19 +41,19 @@ $(document).ready(function () {
     $('.see-more-container').addClass('d-none');
   })
 
-  // Case study carousel
-  var $carousel = $('.carousel').flickity();
+  // // Case study carousel
+  // var $carousel = $('.carousel').flickity();
 
-  // previous
-  $('.previous').on('click', function () {
-    console.log($carousel)
-    $carousel.flickity('previous');
-  });
+  // // previous
+  // $('.previous').on('click', function () {
+  //   console.log($carousel)
+  //   $carousel.flickity('previous');
+  // });
 
-  // next
-  $('.next').on('click', function () {
-    $carousel.flickity('next');
-  });
+  // // next
+  // $('.next').on('click', function () {
+  //   $carousel.flickity('next');
+  // });
 
   // Copy to clipboard
   $('.clipboard-copy').click(function () {

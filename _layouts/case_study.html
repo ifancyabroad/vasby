@@ -70,23 +70,18 @@ layout: default
   <div class="row">
     <div class="col wow fadeInUp">
       
-      <div class="carousel">
-        {% assign case_studies = site.case_studies | where: 'featured', true %}
-        {% for case_study in case_studies %}
-        <div class="carousel-cell case-study-next-image">
-          <img class="img-fluid" src="{{ 'assets/images/' | append: case_study.site_image | relative_url }}" alt="{{ page.alt }}">
-          <a href="{{ case_study.site_url }}" target="_blank">
-            <div class="view-project">
-              <p class="case-study-link mb-0">VIEW<br>PROJECT</p>
-            </div>
-          </a>
-        </div>
-        {% endfor %}
+      <div class="case-study-next-image">
+        <img class="img-fluid" src="{{ 'assets/images/' | append: page.site_image | relative_url }}" alt="{{ page.alt }}">
+        <a href="{{ page.site_url }}" target="_blank">
+          <div class="view-project">
+            <p class="case-study-link mb-0">VIEW<br>PROJECT</p>
+          </div>
+        </a>
       </div>
 
       <div class="d-flex justify-content-between mb-5">
-        <a class="case-study-link previous"><span class="mr-3">&#10229;</span> PREVIOUS</a>
-        <a class="case-study-link next">NEXT <span class="ml-3">&#10230;</span></a>
+        <a class="case-study-link previous {% if page.previous == nil %}invisible{% endif %}" href="{{ page.previous.url }}"><span class="mr-3">&#10229;</span> PREVIOUS</a>
+        <a class="case-study-link next {% if page.next == nil %}invisible{% endif %}" href="{{ page.next.url }}">NEXT <span class="ml-3">&#10230;</span></a>
       </div>
     </div>
   </div>
