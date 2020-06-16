@@ -80,8 +80,8 @@ layout: default
       </div>
 
       <div class="d-flex justify-content-between mb-5">
-        <a class="case-study-link previous {% if page.previous == nil %}invisible{% endif %}" href="{{ page.previous.url }}"><span class="mr-3">&#10229;</span> PREVIOUS</a>
-        <a class="case-study-link next {% if page.next == nil %}invisible{% endif %}" href="{{ page.next.url }}">NEXT <span class="ml-3">&#10230;</span></a>
+        <a class="case-study-link previous {% if page.previous == nil %}invisible{% endif %}" href="{{ page.previous.url | relative_url }}"><span class="mr-3">&#10229;</span> PREVIOUS</a>
+        <a class="case-study-link next {% if page.next == nil %}invisible{% endif %}" href="{{ page.next.url | relative_url }}">NEXT <span class="ml-3">&#10230;</span></a>
       </div>
     </div>
   </div>
