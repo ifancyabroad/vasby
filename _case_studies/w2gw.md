@@ -2,15 +2,20 @@
 short_name: w2gw
 order_number: 1
 featured: true
+home_image: w2gw_homepage.jpg
 name: Where 2 Go When
 tag: Building a travel startup from the ground up to Virgin funding
 client: Where 2 Go When
 type: Website, Web App
-featured_image: w2gw_homepage.jpg
+featured_image: hippodrome_online_large_01.jpg
+image_1: hippodrome_online_small_01.jpg
+image_2: hippodrome_online_small_03.jpg
+image_3: hippodrome_online_small_02.jpg
 alt: Some alt text
 quote: “To have the guidance and knowledge from the väsby team really helped when starting up a business from the ground up.”
 quote_label: Scott Calver - CEO, Where 2 Go When
 site_url: http://www.where2gowhen.co.uk
+site_image: hippodrome_online_large_02.jpg
 content_title: Creating a legacy brand and product within the travel market.
 ---
 <p class="mb-4">When a new travel start up approached us to build their brand and offering - we couldn’t have been happier. We set about creating a logo and brand that would be remembered in the busy market.</p>

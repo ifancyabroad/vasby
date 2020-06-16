@@ -2,15 +2,20 @@
 short_name: hippodrome
 order_number: 2
 featured: true
+home_image: hippodrome_online_homepage.jpg
 name: Hippodrome Online
 tag: Building an online gaming site geared for increased conversions
 client: Hippodrome Online
 type: Website Design, App Design
-featured_image: hippodrome_online_homepage.jpg
+featured_image: hippodrome_online_large_01.jpg
+image_1: hippodrome_online_small_01.jpg
+image_2: hippodrome_online_small_03.jpg
+image_3: hippodrome_online_small_02.jpg
 alt: Some alt text
 quote: “Website and web app that contributed to a traffic increase of over 6% in the first quarter after launch.”
 quote_label: 
 site_url: https://www.hippodromeonline.com
+site_image: hippodrome_online_large_02.jpg
 content_title: Utilising UX and UI design to transform an online gaming company.
 ---
 <p class="mb-4">Working closely with all at The Hippodrome Casino - we set out to improve the overall design and conversions of their online gaming offering.</p>

@@ -28,7 +28,7 @@ title: Home
         <a class="case-study mb-5 wow fadeInUp {% if forloop.index > 4 %}d-none{% endif %}" href="{{ case_study.url | relative_url }}"
           {% if mod == 0 %} data-wow-delay="0.2s" {% endif %}>
           <div class="img-hover-zoom mb-4">
-            <img class="img-fluid" src="{{ 'assets/images/' | append: case_study.featured_image | relative_url }}" alt="{{ case_study.alt }}">
+            <img class="img-fluid" src="{{ 'assets/images/' | append: case_study.home_image | relative_url }}" alt="{{ case_study.alt }}">
           </div>
           <h5 class="text-primary">{{ case_study.name }}</h5>
           <p class="text-xl">{{ case_study.tag }}</p>
