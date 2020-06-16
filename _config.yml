@@ -1,6 +1,7 @@
 collections:
   case_studies:
     output: true
+    permalink: /:name
 
 defaults:
   - scope:
