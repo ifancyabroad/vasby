@@ -58,6 +58,7 @@ layout: default
     </div>
   </div>
 
+  {% if page.image_2 and page.image_3 %}
   <div class="row">
     <div class="col-md-6 wow fadeInUp">
       <img class="img-fluid case-study-screenshot" src="{{ 'assets/images/' | append: page.image_2 | relative_url }}" alt="{{ page.alt }}">
@@ -66,6 +67,7 @@ layout: default
       <img class="img-fluid case-study-screenshot" src="{{ 'assets/images/' | append: page.image_3 | relative_url }}" alt="{{ page.alt }}">
     </div>
   </div>
+  {% endif %}
 
   <div class="row">
     <div class="col wow fadeInUp">
