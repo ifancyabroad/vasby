@@ -34,7 +34,7 @@ layout: default
   <div class="row">
     <div class="col wow fadeInUp">
       <div class="case-study-image mb-5">
-        <img class="img-fluid" src="{{ 'assets/images/' | append: page.featured_image | relative_url }}" alt="{{ page.alt }}">
+        <img class="img-fluid" src="{{ 'assets/images/' | append: page.featured_image | relative_url }}" alt="{{ page.name }} screenshot">
       </div>
     </div>
   </div>
@@ -45,7 +45,7 @@ layout: default
       {{ page.content | markdownify }}
     </div>
     <div class="col-md-6 wow fadeInUp" data-wow-delay="0.2s">
-      <img class="img-fluid" src="{{ 'assets/images/' | append: page.image_1 | relative_url }}" alt="{{ page.alt }}">
+      <img class="img-fluid" src="{{ 'assets/images/' | append: page.image_1 | relative_url }}" alt="{{ page.name }} screenshot">
     </div>
   </div>
 
@@ -61,10 +61,10 @@ layout: default
   {% if page.image_2 and page.image_3 %}
   <div class="row">
     <div class="col-md-6 wow fadeInUp">
-      <img class="img-fluid case-study-screenshot" src="{{ 'assets/images/' | append: page.image_2 | relative_url }}" alt="{{ page.alt }}">
+      <img class="img-fluid case-study-screenshot" src="{{ 'assets/images/' | append: page.image_2 | relative_url }}" alt="{{ page.name }} screenshot">
     </div>
     <div class="col-md-6 wow fadeInUp" data-wow-delay="0.2s">
-      <img class="img-fluid case-study-screenshot" src="{{ 'assets/images/' | append: page.image_3 | relative_url }}" alt="{{ page.alt }}">
+      <img class="img-fluid case-study-screenshot" src="{{ 'assets/images/' | append: page.image_3 | relative_url }}" alt="{{ page.name }} screenshot">
     </div>
   </div>
   {% endif %}
@@ -73,7 +73,7 @@ layout: default
     <div class="col wow fadeInUp">
       
       <div class="case-study-next-image">
-        <img class="img-fluid" src="{{ 'assets/images/' | append: page.site_image | relative_url }}" alt="{{ page.alt }}">
+        <img class="img-fluid" src="{{ 'assets/images/' | append: page.site_image | relative_url }}" alt="{{ page.name }} screenshot">
         <a href="{{ page.site_url }}" target="_blank">
           <div class="view-project">
             <p class="case-study-link mb-0">VIEW<br>PROJECT</p>
