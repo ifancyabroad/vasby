@@ -7,15 +7,15 @@ name: bonafide hr
 tag: A new modern take on HR - taking a vibrant approach in a traditional industry
 client: bonafide hr
 type: Full Brand & Website Design
-featured_image: hippodrome_online_large_01.jpg
-image_1: hippodrome_online_small_01.jpg
-image_2: hippodrome_online_small_03.jpg
-image_3: hippodrome_online_small_02.jpg
+featured_image: bonafide_large_01.jpg
+image_1: bonafide-small-01.jpg
+image_2: bonafide-small-02.jpg
+image_3: bonafide-small-03.jpg
 alt: Some alt text
 quote: “We really appreciate the patience and understanding of the väsby team to get this project completed so smoothly, we love the end result.”
 quote_label: Shaheen Kadri - Director, bonafide hr
 site_url: https://bonafidehr.co.uk
-site_image: hippodrome_online_large_02.jpg
+site_image: bonafide_large_02.jpg
 content_title: Creating a fresh brand and online presence from pixel zero to launch.
 ---
 <p class="mb-4">When the opportunity came to work with a new HR company that wanted to take on the startup industry, we jumped at the chance.</p>
