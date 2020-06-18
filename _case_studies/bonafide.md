@@ -2,6 +2,7 @@
 short_name: bonafide
 order_number: 3
 featured: true
+live: true
 home_image: bonafidehr_homepage.jpg
 name: bonafide hr
 tag: A new modern take on HR - taking a vibrant approach in a traditional industry
@@ -11,7 +12,6 @@ featured_image: bonafide_large_01.jpg
 image_1: bonafide-small-01.jpg
 image_2: bonafide-small-02.jpg
 image_3: bonafide-small-03.jpg
-alt: Some alt text
 quote: “We really appreciate the patience and understanding of the väsby team to get this project completed so smoothly, we love the end result.”
 quote_label: Shaheen Kadri - Director, bonafide hr
 site_url: https://bonafidehr.co.uk

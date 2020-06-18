@@ -2,16 +2,16 @@
 short_name: w2gw
 order_number: 1
 featured: true
+live: true
 home_image: w2gw_homepage.jpg
 name: Where 2 Go When
-tag: Building a travel startup from the ground up to Virgin funding
+tag: Building a travel startup from initial conception to Virgin funding success
 client: Where 2 Go When
 type: Website, Web App
 featured_image: w2gw_large_01.jpg
 image_1: w2gw_small_01.jpg
 image_2: w2gw_small_02.jpg
 image_3: w2gw_small_03.jpg
-alt: Some alt text
 quote: “To have the guidance and knowledge from the väsby team really helped when starting up a business from the ground up.”
 quote_label: Scott Calver - CEO, Where 2 Go When
 site_url: http://www.where2gowhen.co.uk

@@ -25,14 +25,20 @@ title: Home
         {% assign case_studies = site.case_studies | where: 'featured', true | sort: 'order_number' %}
         {% for case_study in case_studies %}
         {% assign mod = forloop.index | modulo: 2 %}
-        <a class="case-study mb-5 wow fadeInUp {% if forloop.index > 4 %}d-none{% endif %}" href="{{ case_study.url | relative_url }}"
-          {% if mod == 0 %} data-wow-delay="0.2s" {% endif %}>
+        <a class="case-study mb-5 wow fadeInUp {% if forloop.index > 4 %}d-none{% endif %}"
+          {% if case_study.live == true %}href="{{ case_study.url | relative_url }}"{% endif %} {% if mod == 0 %}data-wow-delay="0.2s"{% endif %}>
           <div class="img-hover-zoom mb-4">
             <img class="img-fluid" src="{{ 'assets/images/' | append: case_study.home_image | relative_url }}" alt="{{ case_study.name }} screenshot">
           </div>
           <h5 class="text-primary">{{ case_study.name }}</h5>
           <p class="text-xl">{{ case_study.tag }}</p>
-          <p class="spaced-letters h6 arrow-link">VIEW CASE STUDY <span>&#10230;</span></p>
+          <p class="spaced-letters h6 arrow-link">
+            {% if case_study.live == true %}
+            VIEW CASE STUDY <span>&#10230;</span>
+            {% else %}
+            COMING SOON
+            {% endif %}
+          </p>
         </a>
         {% endfor %}
         <div class="logo-container wow fadeInUp">

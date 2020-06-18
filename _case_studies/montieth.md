@@ -2,7 +2,8 @@
 short_name: montieth
 order_number: 6
 featured: true
-home_image: montieth_homepage.jpg
+live: false
+home_image: montieth_homepage_02.gif
 name: Montieth & Co
 tag: Delivering a dynamic new identity for a global public relations company
 client: Montieth & Co
@@ -11,7 +12,6 @@ featured_image: hippodrome_online_large_01.jpg
 image_1: hippodrome_online_small_01.jpg
 image_2: hippodrome_online_small_03.jpg
 image_3: hippodrome_online_small_02.jpg
-alt: Some alt text
 quote: “The väsby team were so helpful and patient, the whole of the company loved the end result”
 quote_label: Becky Nye - Director, EMEA - Montieth & Company.
 site_url: https://montiethco.com

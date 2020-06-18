@@ -2,16 +2,16 @@
 short_name: hippodrome
 order_number: 2
 featured: true
+live: true
 home_image: hippodrome_online_homepage.jpg
 name: Hippodrome Online
-tag: Building an online gaming site geared for increased conversions
+tag: Building and online gaming site and app geared for increased conversions
 client: Hippodrome Online
 type: Website Design, App Design
 featured_image: hippodrome_online_large_01.jpg
 image_1: hippodrome_online_small_01.jpg
 image_2: hippodrome_online_small_03.jpg
 image_3: hippodrome_online_small_02.jpg
-alt: Some alt text
 quote: “Website and web app that contributed to a traffic increase of over 6% in the first quarter after launch.”
 quote_label: 
 site_url: https://www.hippodromeonline.com

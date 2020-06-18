@@ -2,6 +2,7 @@
 short_name: stabb
 order_number: 4
 featured: true
+live: true
 home_image: stabb_homepage.jpg
 name: Stabb Interiors
 tag: A new visual presence for the most innovative London office interior agency
@@ -11,7 +12,6 @@ featured_image: stabb_large_01.jpg
 image_1: stabb-small-01.jpg
 image_2: stabb-small-02.jpg
 image_3: stabb-small-03.jpg
-alt: Some alt text
 quote: “We really love what the team has done, it’s modernised our digital presence”
 quote_label: James Stabb - Project Director, Stabb Interiors
 site_url: https://stabb.co.uk
