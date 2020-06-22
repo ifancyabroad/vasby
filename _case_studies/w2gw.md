@@ -12,7 +12,7 @@ featured_image: w2gw_large_01.jpg
 image_1: w2gw_small_01.jpg
 image_2: w2gw_small_02.jpg
 image_3: w2gw_small_03.jpg
-quote: “To have the guidance and knowledge from the väsby team really helped when starting up a business from the ground up.”
+quote: “To have the guidance and knowledge from the väsby team really helped when starting from the ground up.”
 quote_label: Scott Calver - CEO, Where 2 Go When
 site_url: http://www.where2gowhen.co.uk
 site_image: w2gw_large_02.jpg
