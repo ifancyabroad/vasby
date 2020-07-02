@@ -2,7 +2,7 @@
 short_name: montieth
 order_number: 6
 featured: true
-live: false
+live: true
 home_image: montieth_homepage_02.gif
 name: Montieth & Co
 tag: Delivering a dynamic new identity for a global public relations company
