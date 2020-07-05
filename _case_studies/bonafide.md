@@ -12,7 +12,7 @@ featured_image: bonafide_large_01.jpg
 image_1: bonafide-small-01.jpg
 image_2: bonafide-small-02.jpg
 image_3: bonafide-small-03.jpg
-quote: “We really appreciate the patience and understanding of the väsby team to get this project completed so smoothly, we love the end result.”
+quote: “They did a remarkable job from ideation, design to implementation. What we liked about The Väsby is they are able to see the bigger picture and vision.”
 quote_label: Shaheen Kadri - Director, bonafide hr
 site_url: https://bonafidehr.co.uk
 site_image: bonafide_large_02.jpg
