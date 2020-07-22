@@ -15,13 +15,13 @@
 @font-face {
   font-family: "Larsseit";
   src: url('../fonts/larsseit-medium.ttf') format("truetype");
-  font-weight: 700;
+  font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "Sharp-Sans-Bold";
-  src: url('../fonts/sharp-sans-bold.otf') format("opentype");
-  font-weight: normal;
+  font-family: "Larsseit";
+  src: url('../fonts/larsseit-bold.woff') format("woff");
+  font-weight: 700;
   font-style: normal;
 }
